@@ -1,11 +1,14 @@
+
+/* Estilo base do corpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
     color: #333;
 }
 
+/* Cabeçalho */
 header {
     background-color: #004080;
     color: white;
@@ -13,6 +16,7 @@ header {
     text-align: center;
 }
 
+/* Menu de navegação */
 nav ul {
     list-style: none;
     padding: 0;
@@ -33,10 +37,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Conteúdo principal */
 main {
     padding: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
+/* Rodapé */
 footer {
     background-color: #004080;
     color: white;
@@ -45,6 +53,7 @@ footer {
     margin-top: 30px;
 }
 
+/* Formulário */
 form {
     background: white;
     padding: 20px;
@@ -73,4 +82,29 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #00264d;
+}
+
+/* Estilo para links visuais */
+a {
+    color: #004080;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para cards do portfólio (se usados em páginas específicas) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
