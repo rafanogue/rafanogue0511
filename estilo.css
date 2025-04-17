@@ -1,110 +1,67 @@
-
-/* Estilo base do corpo */
+/* Layout geral */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Cabeçalho */
+/* Cabeçalho e menu */
 header {
-    background-color: #004080;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-/* Menu de navegação */
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Conteúdo principal */
 main {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  border-radius: 10px;
 }
 
 /* Rodapé */
 footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
 
-/* Formulário */
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-label {
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-input[type="submit"] {
-    background-color: #004080;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #00264d;
-}
-
-/* Estilo para links visuais */
-a {
-    color: #004080;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para cards do portfólio (se usados em páginas específicas) */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  main {
+    padding: 20px 10px;
+  }
 }
